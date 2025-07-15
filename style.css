@@ -1,0 +1,139 @@
+
+body {
+  background: #f8fbfe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background: linear-gradient(145deg, #ffffff, #f8fbfe);
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(50, 130, 250, 0.1);
+  width: 320px;
+  border: 1px solid rgba(200, 215, 235, 0.8);
+}
+
+.display {
+  background: #ffffff;
+  color: #3a4757;
+  font-size: 2.4em;
+  padding: 22px 20px;
+  border-radius: 14px;
+  text-align: right;
+  margin-bottom: 25px;
+  height: 70px;
+  overflow-x: auto;
+  border: 1px solid #e6ecf5;
+  font-weight: 300;
+  box-shadow: inset 0 2px 5px rgba(0,25,70,0.03);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  padding: 18px;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.number {
+  background: #ffffff;
+  color: #6486a8;
+  border: 1px solid #e6ecf5;
+}
+
+.number:hover {
+  background: #f7faff;
+  color: #4a76a8;
+}
+
+/* Distinct colors for each operator */
+.plus {
+  background: #5cc7d6;
+  color: white;
+}
+.plus:hover {
+  background: #44b8c9;
+}
+
+.minus {
+  background: #f49d6e;
+  color: white;
+}
+.minus:hover {
+  background: #f38b55;
+}
+
+.multiply {
+  background: #cc8bf0;
+  color: white;
+}
+.multiply:hover {
+  background: #c174f0;
+}
+
+.divide {
+  background: #f68dbb;
+  color: white;
+}
+.divide:hover {
+  background: #f575ab;
+}
+
+.equal {
+  background: #6bd68b;
+  color: white;
+  grid-column: span 2;
+}
+.equal:hover {
+  background: #56c978;
+}
+
+.clear {
+  background: #ff94a3;
+  color: white;
+}
+.clear:hover {
+  background: #ff7b8d;
+}
+
+.percent {
+  background: #8ac6f5;
+  color: white;
+}
+.percent:hover {
+  background: #72b8f4;
+}
+
+.delete {
+  background: #a8b9d1;
+  color: white;
+}
+.delete:hover {
+  background: #95a9c6;
+}
+
